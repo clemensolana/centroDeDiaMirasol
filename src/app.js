@@ -6,6 +6,10 @@ const path = require('path');
 // Express:
 const app = express();
 
+// Middlewares:
+
+app.use(express.static(path.join(__dirname, '../public')));
+
 // Routes:
 const mainRoutes = require('./routes/mainRoutes.js');
 
