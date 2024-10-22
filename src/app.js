@@ -7,7 +7,11 @@ const path = require('path');
 const app = express();
 
 // Routes:
-const mainRoutes = require('./routes/mainRoutes');
+const mainRoutes = require('./routes/mainRoutes.js');
+
+// Use of routes:
+
+app.use('/', mainRoutes);
 
 // Port:
 const PORT = process.env.PORT || 3001;
