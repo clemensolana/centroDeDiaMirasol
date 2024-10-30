@@ -16,6 +16,7 @@
   --text-xl: 24px; /* textos como listados o para páginas sin mucho contenido */
   --text-2xl: 28px; /* subtítulos */
   --text-3xl: 32px; /* títulos */
+  --text-4xl: 64px; /* menu hamburguesa */
 }
 
 /* Clases globales (por ejemplo botones, fondo, inputs, barra de búsqueda, checks, cuadros (por ejemplo de noticias) */
