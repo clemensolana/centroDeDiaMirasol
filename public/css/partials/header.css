@@ -24,6 +24,7 @@
 }
 
 .navContainer ul {
+  display: none; /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
   position: absolute;
   text-align: center;
   top: 100px;
