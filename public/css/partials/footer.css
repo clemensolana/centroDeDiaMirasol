@@ -8,6 +8,7 @@
   background-color: var(--azul);
   position: relative;
   color: var(--blanco);
+  border-top: 1px solid black;
 }
 
 .socialContainer {
