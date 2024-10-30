@@ -6,10 +6,17 @@ footer {
 }
 
 .homeContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .carrouselContainer {
 }
 .carrouselImage {
   width: 100%;
+}
+
+.welcomeContainer {
+  padding: 20px 20px;
+  text-align: center;
 }
