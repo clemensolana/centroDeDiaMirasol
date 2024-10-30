@@ -22,4 +22,5 @@ footer {
 }
 .welcomeContainer p {
   padding: 0px 20px;
+  font-size: var(--text-lg);
 }
