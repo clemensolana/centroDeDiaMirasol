@@ -4,3 +4,12 @@ main {
 footer {
   /* display: none; */ /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
 }
+
+.homeContainer {
+}
+
+.carrouselContainer {
+}
+.carrouselImage {
+  width: 100%;
+}
