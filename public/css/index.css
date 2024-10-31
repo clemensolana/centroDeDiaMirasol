@@ -1,3 +1,5 @@
+/* Mobile */
+
 main {
   /* display: none; */ /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
 }
@@ -23,4 +25,12 @@ footer {
 .welcomeContainer p {
   padding: 0px 20px;
   font-size: var(--text-lg);
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
 }
