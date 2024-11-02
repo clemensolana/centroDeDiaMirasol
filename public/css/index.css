@@ -13,9 +13,11 @@ footer {
 }
 
 .carrouselContainer {
+  width: 100%;
 }
 .carrouselImage {
   width: 100%;
+  height: auto;
 }
 
 .welcomeContainer {
@@ -29,6 +31,10 @@ footer {
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .carrouselImage {
+    max-height: 400px;
+    object-fit: cover;
+  }
 }
 
 /* Desktop */
