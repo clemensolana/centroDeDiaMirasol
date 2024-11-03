@@ -30,7 +30,7 @@ footer {
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   .carrouselImage {
     max-height: 400px;
     object-fit: cover;
@@ -39,4 +39,12 @@ footer {
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .welcomeContainer {
+    padding: 20px 60px;
+    text-align: center;
+  }
+  .welcomeContainer p {
+    padding: 0px 0px;
+    text-align: center;
+  }
 }
