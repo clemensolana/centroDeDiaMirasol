@@ -88,6 +88,6 @@
 @media (min-width: 1024px) {
   .headerContainer {
     padding: 16px 60px;
-    max-height: 150px;
+    max-height: 100px;
   }
 }
