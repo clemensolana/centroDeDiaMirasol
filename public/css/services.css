@@ -1,0 +1,31 @@
+/* Mobile */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.servicesImages {
+  display: none;
+}
+
+.titleContainer p {
+  font-size: var(--text-lg);
+}
+
+.subtitleContainer p {
+  font-size: var(--text-lg);
+}
+
+.specialtiesContainer {
+  font-size: var(--text-lg);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+}
