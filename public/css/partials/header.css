@@ -1,0 +1,93 @@
+/* Mobile */
+
+.headerContainer {
+  display: flex;
+  height: 100%;
+  max-height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--azul);
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.navLogo img {
+  height: 80%;
+  max-height: 100px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.navContainer ul {
+  display: none; /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 100%;
+  margin-right: -20px;
+  list-style-type: none;
+}
+.navContainer li {
+  font-size: 12vw;
+  border-bottom: 1px solid var(--amarillo);
+  padding: 30px 0;
+}
+.navContainer li a {
+  color: var(--negro);
+  text-decoration: none;
+}
+
+.burgerMenu {
+  color: var(--amarillo);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .headerContainer {
+    max-height: 150px;
+  }
+
+  .navLogo img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80%;
+    max-height: 100px;
+  }
+
+  .navContainer ul {
+    display: flex;
+    gap: 0px;
+    text-align: center;
+    position: unset;
+    width: 100%;
+    margin-right: 0px;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+  .navContainer li {
+    font-size: var(--text-lg);
+    border-bottom: none;
+    padding: 30px 0;
+  }
+  .navContainer li a {
+    color: var(--blanco);
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .headerContainer {
+    padding: 16px 60px;
+    max-height: 100px;
+  }
+}

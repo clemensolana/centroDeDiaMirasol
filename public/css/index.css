@@ -1,0 +1,50 @@
+/* Mobile */
+
+main {
+  /* display: none; */ /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
+}
+footer {
+  /* display: none; */ /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
+}
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.carrouselContainer {
+  width: 100%;
+}
+.carrouselImage {
+  width: 100%;
+  height: auto;
+}
+
+.welcomeContainer {
+  padding: 20px 20px;
+  text-align: center;
+}
+.welcomeContainer p {
+  padding: 0px 20px;
+  font-size: var(--text-lg);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .carrouselImage {
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .welcomeContainer {
+    padding: 20px 60px;
+    text-align: center;
+  }
+  .welcomeContainer p {
+    padding: 0px 0px;
+    text-align: center;
+  }
+}

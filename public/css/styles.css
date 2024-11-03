@@ -1,1 +1,22 @@
-/* Variables y clases globales */
+/* Variables globales */
+
+:root {
+  /* Colores */
+  --amarillo: #e99401;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --azul: #0073ff;
+  --gris: #d9d9d9;
+
+  /* Tamaños de letra */
+  --texto-xs: 12px;
+  --texto-sm: 15px; /* texto pequeños como el mapa o la fecha de una noticia */
+  --text-md: 16px; /* texto en footer */
+  --text-lg: 20px; /* texto en footer para tablet y mobile*/
+  --text-xl: 24px; /* textos como listados o para páginas sin mucho contenido */
+  --text-2xl: 28px; /* subtítulos */
+  --text-3xl: 32px; /* títulos */
+  --text-4xl: 64px; /* menu hamburguesa */
+}
+
+/* Clases globales (por ejemplo botones, fondo, inputs, barra de búsqueda, checks, cuadros (por ejemplo de noticias) */
