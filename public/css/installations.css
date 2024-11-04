@@ -59,3 +59,11 @@
   width: 20px;
   height: 20px;
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+}
