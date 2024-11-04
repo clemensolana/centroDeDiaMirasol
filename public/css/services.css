@@ -67,4 +67,60 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 60px;
+  }
+
+  .titleAndImages {
+    display: block;
+  }
+
+  .titleContainer {
+    width: 100%;
+  }
+
+  .servicesImages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .imageContainer2,
+  .imageContainer3,
+  .imageContainer4 {
+    display: block;
+  }
+
+  .servicesImages img {
+    width: 22%;
+    border-radius: 20px;
+  }
+
+  .subtitleContainer {
+    display: block;
+    gap: 0px;
+  }
+
+  .servicesContainer {
+    width: 100%;
+  }
+
+  .specialtiesContainer {
+    width: 100%;
+  }
+  .specialtiesList {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .specialtiesDiv1,
+  .specialtiesDiv2,
+  .specialtiesDiv3,
+  .specialtiesDiv4 {
+    width: 22%;
+  }
 }
