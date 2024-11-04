@@ -1,12 +1,5 @@
 /* Mobile */
 
-main {
-  /* display: none; */ /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
-}
-footer {
-  /* display: none; */ /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
-}
-
 .headerContainer {
   display: flex;
   height: 100%;
