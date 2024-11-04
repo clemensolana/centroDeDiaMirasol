@@ -18,12 +18,51 @@
   font-size: var(--text-lg);
 }
 
-.specialtiesContainer {
+.specialtiesList {
   font-size: var(--text-lg);
 }
 
 /* Tablet */
 @media (min-width: 768px) {
+  .titleAndImages {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+  }
+
+  .titleContainer {
+    width: 50%;
+  }
+
+  .servicesImages {
+    display: flex;
+    width: 50%;
+    padding: 20px 0px;
+  }
+
+  .imageContainer2,
+  .imageContainer3,
+  .imageContainer4 {
+    display: none;
+  }
+
+  .servicesImages img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .subtitleContainer {
+    display: flex;
+    gap: 20px;
+  }
+
+  .servicesContainer {
+    width: 50%;
+  }
+
+  .specialtiesContainer {
+    width: 50%;
+  }
 }
 
 /* Desktop */
