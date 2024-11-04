@@ -9,6 +9,10 @@ const mainController = {
     const filePath = path.join(__dirname, '../views/services.html');
     return res.sendFile(filePath);
   },
+  installations: (req, res) => {
+    const filePath = path.join(__dirname, '../views/installations.html');
+    return res.sendFile(filePath);
+  },
 };
 
 module.exports = mainController;

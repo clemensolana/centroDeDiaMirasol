@@ -8,5 +8,6 @@ const mainController = require('../controllers/mainController');
 // Main routes
 mainRouter.get('/', mainController.index);
 mainRouter.get('/services', mainController.services);
+mainRouter.get('/installations', mainController.installations);
 
 module.exports = mainRouter;
