@@ -69,17 +69,15 @@
   }
 
   .titleContainer {
-    width: 35%;
+    width: 46%;
   }
 
   .mapContainer {
-    width: 60%;
-    max-width: 550px;
-    height: 550px;
-    object-fit: cover;
+    width: 50%;
   }
   .mapContainer iframe {
     max-height: 380px;
+    max-width: 380px;
   }
 
   .imageContainer {
