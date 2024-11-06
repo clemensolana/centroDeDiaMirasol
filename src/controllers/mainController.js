@@ -13,6 +13,10 @@ const mainController = {
     const filePath = path.join(__dirname, '../views/installations.html');
     return res.sendFile(filePath);
   },
+  aboutUs: (req, res) => {
+    const filePath = path.join(__dirname, '../views/aboutUs.html');
+    return res.sendFile(filePath);
+  },
 };
 
 module.exports = mainController;
