@@ -61,7 +61,9 @@
     width: 45%;
   }
   .compassContainer {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 45%;
   }
   .compassContainer img {
