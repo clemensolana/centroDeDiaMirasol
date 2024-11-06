@@ -11,21 +11,25 @@
   flex-direction: column;
   text-align: center;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .whoWeAreContainer p {
   text-align: left;
   font-size: var(--text-md);
+  margin-bottom: 15px;
 }
 
 .ourMisionContainer p {
   text-align: left;
   font-size: var(--text-md);
+  margin-bottom: 15px;
 }
 
 .ourVisionContainer p {
   text-align: left;
   font-size: var(--text-md);
+  margin-bottom: 15px;
 }
 
 .ourValuesContainer p {
@@ -35,5 +39,48 @@
 
 .compassContainer {
   display: none;
-  font-size: var(--text-md);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .misionVisionValuesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .ourMisionContainer {
+    width: 45%;
+  }
+  .ourVisionContainer {
+    width: 45%;
+  }
+  .ourValuesContainer {
+    width: 45%;
+  }
+  .compassContainer {
+    display: block;
+    width: 45%;
+  }
+  .compassContainer img {
+    width: 50%;
+  }
+
+  .whoWeAreContainer p {
+    text-align: center;
+  }
+
+  .ourMisionContainer p {
+    text-align: center;
+  }
+
+  .ourVisionContainer p {
+    text-align: center;
+  }
+
+  .ourValuesContainer p {
+    text-align: center;
+  }
 }
