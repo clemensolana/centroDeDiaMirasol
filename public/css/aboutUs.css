@@ -1,0 +1,39 @@
+/* Mobile */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.whoWeAreContainer p {
+  text-align: left;
+  font-size: var(--text-md);
+}
+
+.ourMisionContainer p {
+  text-align: left;
+  font-size: var(--text-md);
+}
+
+.ourVisionContainer p {
+  text-align: left;
+  font-size: var(--text-md);
+}
+
+.ourValuesContainer p {
+  text-align: left;
+  font-size: var(--text-md);
+}
+
+.compassContainer {
+  display: none;
+  font-size: var(--text-md);
+}
