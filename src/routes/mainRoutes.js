@@ -10,5 +10,6 @@ mainRouter.get('/', mainController.index);
 mainRouter.get('/services', mainController.services);
 mainRouter.get('/installations', mainController.installations);
 mainRouter.get('/aboutUs', mainController.aboutUs);
+mainRouter.get('/contactUs', mainController.contactForm);
 
 module.exports = mainRouter;

@@ -17,6 +17,10 @@ const mainController = {
     const filePath = path.join(__dirname, '../views/aboutUs.html');
     return res.sendFile(filePath);
   },
+  contactForm: (req, res) => {
+    const filePath = path.join(__dirname, '../views/contactForm.html');
+    return res.sendFile(filePath);
+  },
 };
 
 module.exports = mainController;
