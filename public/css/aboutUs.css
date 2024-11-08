@@ -20,6 +20,10 @@
   margin-bottom: 15px;
 }
 
+.imageTopContainer {
+  display: none;
+}
+
 .ourMisionContainer p {
   text-align: justify;
   font-size: var(--text-md);
@@ -40,7 +44,7 @@
   font-size: var(--text-md);
 }
 
-.imageContainer img {
+.imageBottomContainer img {
   width: 100%;
   border-radius: 20px;
 }
@@ -64,17 +68,55 @@
   .ourValuesContainer {
     width: 45%;
   }
-  .imageContainer {
+  .imageBottomContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 45%;
   }
-  .imageContainer img {
+  .imageBottomContainer img {
     width: 80%;
   }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .homeContainer {
+    padding: 50px 60px;
+  }
+
+  .whoWeAreImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: none;
+    margin-bottom: 15px;
+  }
+
+  .imageTopContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .imageTopContainer img {
+    width: 100%;
+  }
+
+  .misionVisionValuesContainer {
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+  .ourMisionContainer {
+    width: 23%;
+  }
+  .ourVisionContainer {
+    width: 23%;
+  }
+  .ourValuesContainer {
+    width: 23%;
+  }
+  .imageBottomContainer {
+    display: none;
+  }
 }
