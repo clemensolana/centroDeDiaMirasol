@@ -20,6 +20,7 @@
 .welcomeContainer p {
   padding: 0px 20px;
   font-size: var(--text-lg);
+  text-align: justify;
 }
 
 /* Tablet */
@@ -38,6 +39,5 @@
   }
   .welcomeContainer p {
     padding: 0px 0px;
-    text-align: center;
   }
 }
