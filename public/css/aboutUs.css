@@ -1,0 +1,122 @@
+/* Mobile */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.whoWeAreContainer p {
+  text-align: justify;
+  font-size: var(--text-md);
+  margin-bottom: 15px;
+}
+
+.imageTopContainer {
+  display: none;
+}
+
+.ourMisionContainer p {
+  text-align: justify;
+  font-size: var(--text-md);
+  margin-bottom: 15px;
+}
+
+.ourVisionContainer p {
+  text-align: justify;
+  font-size: var(--text-md);
+  margin-bottom: 15px;
+}
+
+.ourValuesContainer {
+  margin-bottom: 15px;
+}
+.ourValuesContainer ul {
+  text-align: justify;
+  font-size: var(--text-md);
+}
+
+.imageBottomContainer img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .misionVisionValuesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  .ourMisionContainer {
+    width: 45%;
+  }
+  .ourVisionContainer {
+    width: 45%;
+  }
+  .ourValuesContainer {
+    width: 45%;
+  }
+  .imageBottomContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+  .imageBottomContainer img {
+    width: 80%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .homeContainer {
+    padding: 50px 60px;
+  }
+
+  .whoWeAreImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: none;
+    margin-bottom: 15px;
+  }
+
+  .imageTopContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  .imageTopContainer img {
+    width: 100%;
+  }
+
+  .misionVisionValuesContainer {
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+  .ourMisionContainer {
+    width: 23%;
+  }
+  .ourVisionContainer {
+    width: 23%;
+  }
+  .ourValuesContainer {
+    width: 23%;
+  }
+  .imageBottomContainer {
+    display: none;
+  }
+}

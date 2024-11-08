@@ -9,5 +9,6 @@ const mainController = require('../controllers/mainController');
 mainRouter.get('/', mainController.index);
 mainRouter.get('/services', mainController.services);
 mainRouter.get('/installations', mainController.installations);
+mainRouter.get('/aboutUs', mainController.aboutUs);
 
 module.exports = mainRouter;
