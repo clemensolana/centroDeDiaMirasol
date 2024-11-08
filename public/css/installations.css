@@ -11,6 +11,9 @@
   flex-direction: column;
   text-align: center;
 }
+.titleContainer p {
+  text-align: justify;
+}
 
 .mapContainer {
   display: flex;
