@@ -1,0 +1,82 @@
+/* Mobile */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.contactFormTitle {
+  text-align: center;
+}
+
+.squareContainer {
+  border: 1px solid var(--gris);
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.contactFormInfo {
+}
+.contactFormInfo p {
+  font-size: 18px;
+  text-align: left;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+}
+.contactFormContainer label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.contactFormContainer input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gris);
+  margin-bottom: 15px;
+}
+.contactFormContainer select {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gris);
+  margin-bottom: 15px;
+}
+.contactFormContainer textarea {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gris);
+  margin-bottom: 15px;
+}
+.contactFormContainer a {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+  text-decoration: underline;
+  color: darkgray;
+  font-size: 14px;
+}
+.contactFormContainer button {
+  padding: 15px 15px;
+  background-color: var(--amarillo);
+  border: none;
+  border-radius: 10px;
+  color: var(--blanco);
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.lbTerms {
+  cursor: pointer;
+}
+.chkTerms {
+  margin-bottom: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.chkTerms:checked {
+  accent-color: var(--amarillo);
+}
