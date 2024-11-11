@@ -16,8 +16,6 @@
   padding: 20px 20px;
 }
 
-.contactFormInfo {
-}
 .contactFormInfo p {
   font-size: 18px;
   text-align: left;
@@ -29,7 +27,6 @@
 }
 .contactFormContainer label {
   margin-bottom: 5px;
-  font-size: 14px;
 }
 .contactFormContainer input {
   padding: 10px 10px;
@@ -55,7 +52,6 @@
   text-decoration: none;
   text-decoration: underline;
   color: darkgray;
-  font-size: 14px;
 }
 .contactFormContainer button {
   padding: 15px 15px;
