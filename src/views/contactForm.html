@@ -63,16 +63,15 @@
             <div class="squareContainer">
                 <article class="contactFormInfo">
                     <p>Por favor, completa el siguiente formulario, responderemos tu consulta lo antes posible.</p>
-                    <p>Los campos marcados con * son obligatorios.</p>
                 </article>
                 <form class="contactFormContainer" action="/contactus" method="POST">
-                    <label for="name">Nombre/s y apellido/s:</label>
+                    <label for="name">Nombre/s y apellido/s del paciente:</label>
                     <input type="text" id="name" name="name">
                     <label for="phone">Teléfono:</label>
                     <input type="tel" id="phone" name="phone">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
-                    <label for="healthInsurance">Obra social / prepaga</label>
+                    <label for="healthInsurance">Obra social / prepaga:</label>
                     <select name="healthInsurance" id="healthInsurance">
                         <option value="" selected>Seleccione una opción</option>
                         <option value="no">No poseo</option>
@@ -85,16 +84,16 @@
                         <option value="sancorSalud">Sancor Salud</option>
                         <option value="otra">Otra</option>
                     </select>
-                    <label for="age">Edad:</label>
+                    <label for="age">Edad del paciente:</label>
                     <input type="number" id="age" name="age">
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message"></textarea>
-                    <label for="terms">Acepto los términos y condiciones</label>
-                    <input type="checkbox" id="terms" name="terms">
-                    <a href="#">Términos y condiciones</a>
-                    <label for="dataProtection" id="dataProtection">Acepto la política de protección de datos</label>
-                    <input type="checkbox" id="dataProtection" name="dataProtection">
-                    <a href="#">Política de protección de datos personales</a>
+                    <div class="optionsContainer">
+                        <label class="lbTerms" for="terms"><input class="chkTerms" type="checkbox" id="terms" name="terms">Acepto los términos y condiciones</label>
+                        <a href="#">Términos y condiciones</a>
+                        <label class="lbTerms" for="dataProtection"><input class="chkTerms" type="checkbox" id="dataProtection" name="dataProtection">Acepto la política de protección de datos</label>
+                        <a href="#">Política de protección de datos personales</a>
+                    </div>
                     <button type="submit">Enviar consulta</button>
                 </form>
             </div>
