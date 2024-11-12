@@ -33,10 +33,10 @@ const sendContactForm = async (req, res) => {
       text,
       email
     );
-    res.status(200).send('Correo enviado con éxito.');
+    res.status(200).json({ message: 'Correo enviado con éxito.' });
   } catch (error) {
     console.error('Error al enviar el correo:', error);
-    res.status(500).send(`Error al enviar el correo: ${error.message}`);
+    res.status(500).json({ message: `tipo de error: ${error.message}` });
   }
 };
 
