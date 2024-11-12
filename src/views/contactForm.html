@@ -29,6 +29,7 @@
     <!-- Local scripts -->
 
     <script src="/js/burgerMenu/burgerMenu.js" defer></script>
+    <script src="/js/email/contactForm.js" defer></script>
 
     <title>MCD - Contáctanos</title>
 </head>
@@ -64,7 +65,7 @@
                 <article class="contactFormInfo">
                     <p>Por favor, completa el siguiente formulario, responderemos tu consulta lo antes posible.</p>
                 </article>
-                <form class="contactFormContainer" action="/email/contactus" method="POST">
+                <form id="contactForm" class="contactFormContainer" action="/email/contactus" method="POST">
                     <label for="name">Nombre/s y apellido/s del paciente:</label>
                     <input type="text" id="name" name="name">
                     <label for="phone">Teléfono:</label>
