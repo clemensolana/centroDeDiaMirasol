@@ -76,3 +76,40 @@
 .chkTerms:checked {
   accent-color: var(--amarillo);
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .contactFormContainer {
+    align-items: center;
+  }
+  .contactFormInfo {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contactFormInfo p {
+    text-align: justify;
+  }
+
+  .contactFormContainer label {
+    width: 70%;
+  }
+  .contactFormContainer input {
+    width: 70%;
+  }
+  .contactFormContainer select {
+    width: 70%;
+  }
+  .contactFormContainer textarea {
+    width: 70%;
+  }
+  .contactFormContainer button {
+    width: 50%;
+  }
+
+  .optionsContainer label {
+    width: 100%;
+  }
+  .optionsContainer input {
+    width: auto;
+  }
+}
