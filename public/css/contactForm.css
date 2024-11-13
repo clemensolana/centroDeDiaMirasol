@@ -1,0 +1,163 @@
+/* Mobile */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.contactFormTitle {
+  text-align: center;
+}
+
+.squareContainer {
+  border: 1px solid var(--gris);
+  border-radius: 10px;
+  padding: 20px 20px;
+}
+
+.contactFormInfo p {
+  font-size: 18px;
+  text-align: left;
+}
+
+.patientInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+}
+.contactFormContainer label {
+  margin-bottom: 5px;
+}
+.contactFormContainer input {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gris);
+  margin-bottom: 15px;
+}
+.contactFormContainer select {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gris);
+  margin-bottom: 15px;
+}
+.contactFormContainer textarea {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gris);
+  margin-bottom: 15px;
+}
+.contactFormContainer a {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+  text-decoration: underline;
+  color: darkgray;
+}
+.sendMailButton {
+  width: 100%;
+}
+.contactFormContainer button {
+  width: 100%;
+  padding: 15px 15px;
+  background-color: var(--amarillo);
+  border: none;
+  border-radius: 10px;
+  color: var(--blanco);
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.lbTerms {
+  cursor: pointer;
+}
+.chkTerms {
+  margin-bottom: 15px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.chkTerms:checked {
+  accent-color: var(--amarillo);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .contactFormContainer {
+    align-items: center;
+  }
+  .contactFormInfo {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contactFormInfo p {
+    text-align: justify;
+  }
+  .sendMailButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactFormContainer button {
+    width: 50%;
+  }
+
+  .patientInfo {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .optionsContainer label {
+    width: 100%;
+  }
+  .optionsContainer input {
+    width: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .homeContainer {
+    padding: 50px 60px;
+  }
+
+  .squareContainer {
+    padding: 50px 60px;
+  }
+
+  .contactFormInfo p {
+    text-align: center;
+  }
+
+  .contactFormContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .patientInfo {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .optionsContainer {
+    width: 40%;
+    text-align: center;
+  }
+
+  .sendMailButton {
+    width: 70%;
+  }
+  .sendMailButton button {
+    width: 30%;
+  }
+}
