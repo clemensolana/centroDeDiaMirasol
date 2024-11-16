@@ -11,6 +11,8 @@ mainRouter.get('/services', mainController.services);
 mainRouter.get('/installations', mainController.installations);
 mainRouter.get('/aboutUs', mainController.aboutUs);
 mainRouter.get('/contactUs', mainController.contactForm);
+mainRouter.get('/news', mainController.news);
+mainRouter.get('/aNew', mainController.aNew);
 
 // Email routes
 const emailRoutes = require('./emailRoutes.js');

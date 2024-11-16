@@ -21,6 +21,14 @@ const mainController = {
     const filePath = path.join(__dirname, '../views/contactForm.html');
     return res.sendFile(filePath);
   },
+  news: (req, res) => {
+    const filePath = path.join(__dirname, '../views/news.html');
+    return res.sendFile(filePath);
+  },
+  aNew: (req, res) => {
+    const filePath = path.join(__dirname, '../views/aNew.html');
+    return res.sendFile(filePath);
+  },
 };
 
 module.exports = mainController;
