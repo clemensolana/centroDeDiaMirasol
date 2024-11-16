@@ -82,3 +82,15 @@
     max-width: 350px;
   }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .homeContainer {
+    padding: 50px 60px;
+  }
+
+  .aNew {
+    width: 20%;
+    max-width: none;
+  }
+}
