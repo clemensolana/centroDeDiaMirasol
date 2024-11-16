@@ -64,3 +64,21 @@
   width: 20px;
   height: 20px;
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .homeContainer {
+    padding: 50px 20px;
+  }
+  .newsContainer section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .aNew {
+    width: 40%;
+    max-width: 350px;
+  }
+}
