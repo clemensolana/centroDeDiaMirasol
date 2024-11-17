@@ -81,7 +81,7 @@
   .moreNewsContainer {
     padding: 30px 30px;
     width: 70%;
-    height: 300px;
+    max-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
