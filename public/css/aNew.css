@@ -57,3 +57,40 @@
   text-decoration: none;
   color: var(--blanco);
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .homeContainer {
+    padding: 50px 20px;
+  }
+
+  .titleContainer {
+    font-size: 30px;
+  }
+
+  .imageContainer img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .parContainer {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .moreNewsContainer {
+    padding: 30px 30px;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .subtitleContainer {
+    font-size: 30px;
+  }
+  .moreNewsListContainer li {
+    font-size: 20px;
+  }
+}
