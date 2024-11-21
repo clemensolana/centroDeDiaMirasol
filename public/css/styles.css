@@ -20,3 +20,20 @@
 }
 
 /* Clases globales (por ejemplo botones, fondo, inputs, barra de búsqueda, checks, cuadros (por ejemplo de noticias) */
+
+/* Mobile */
+.homeContainer {
+  padding: 20px 20px;
+}
+/* Tablet */
+@media (min-width: 768px) {
+  .homeContainer {
+    padding: 50px 50px;
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .homeContainer {
+    padding: 80px 80px;
+  }
+}
