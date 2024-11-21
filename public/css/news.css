@@ -3,7 +3,6 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
 }
 
 .introContainer {
@@ -67,9 +66,6 @@
 
 /* Tablet */
 @media (min-width: 768px) {
-  .homeContainer {
-    padding: 50px 20px;
-  }
   .newsContainer section {
     display: flex;
     flex-direction: row;
@@ -85,10 +81,6 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .homeContainer {
-    padding: 50px 60px;
-  }
-
   .aNew {
     width: 20%;
     max-width: none;

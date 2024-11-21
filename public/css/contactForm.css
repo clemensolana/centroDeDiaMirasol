@@ -3,7 +3,6 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
 }
 
 .contactFormTitle {
@@ -124,10 +123,6 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .homeContainer {
-    padding: 50px 60px;
-  }
-
   .squareContainer {
     padding: 50px 60px;
   }

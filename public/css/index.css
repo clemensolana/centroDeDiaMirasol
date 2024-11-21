@@ -3,6 +3,7 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
+  padding: 0px 0px;
 }
 
 .carrouselContainer {
@@ -25,6 +26,9 @@
 
 /* Tablet */
 @media (min-width: 768px) {
+  .welcomeContainer {
+    padding: 50px 50px;
+  }
   .carrouselImage {
     max-height: 400px;
     object-fit: cover;
@@ -34,7 +38,7 @@
 /* Desktop */
 @media (min-width: 1024px) {
   .welcomeContainer {
-    padding: 20px 60px;
+    padding: 80px 80px;
     text-align: center;
   }
   .welcomeContainer p {

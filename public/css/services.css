@@ -3,7 +3,6 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
 }
 
 .servicesImages {
@@ -70,7 +69,6 @@
   .homeContainer {
     display: flex;
     flex-direction: column;
-    padding: 50px 60px;
   }
 
   .titleAndImages {

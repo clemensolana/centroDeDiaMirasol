@@ -3,7 +3,6 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
 }
 
 .titleContainer {
@@ -127,10 +126,6 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .homeContainer {
-    padding: 50px 60px;
-  }
-
   .titleContainer {
     width: 50%;
   }

@@ -3,7 +3,6 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
 }
 
 .aboutUsContainer {
@@ -81,10 +80,6 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
-  .homeContainer {
-    padding: 50px 60px;
-  }
-
   .whoWeAreImageContainer {
     display: flex;
     flex-direction: row;
