@@ -20,9 +20,9 @@ burgerMenuIcon.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth >= 768) {
-    navMenu.style.display = "flex";
-    main.style.display = "flex";
-    footer.style.display = "flex";
+  if (window.innerWidth > 768) {
+    navMenu.style.display = "";
+    main.style.display = "";
+    footer.style.display = "";
   }
 });
