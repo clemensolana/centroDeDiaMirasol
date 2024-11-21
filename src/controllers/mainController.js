@@ -29,6 +29,14 @@ const mainController = {
     const filePath = path.join(__dirname, '../views/aNew.html');
     return res.sendFile(filePath);
   },
+  termsAndConditions: (req, res) => {
+    const filePath = path.join(__dirname, '../views/t&c.html');
+    return res.sendFile(filePath);
+  },
+  dataProtection: (req, res) => {
+    const filePath = path.join(__dirname, '../views/dataProtection.html');
+    return res.sendFile(filePath);
+  },
 };
 
 module.exports = mainController;

@@ -1,0 +1,43 @@
+/* Mobile */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.sectionContainer {
+  text-align: center;
+}
+
+.titleContainer,
+.subtitleContainer,
+.introductionContainer {
+  word-wrap: break-word;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.listContainer li {
+  margin-bottom: 15px;
+  list-style-position: inside;
+  text-align: left;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .homeContainer {
+    padding: 50px 60px;
+  }
+}
