@@ -3,10 +3,19 @@ const navMenu = document.querySelector(".navContainer ul");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
 
-navMenu.style.display = "none";
+function updateMenuDisplay() {
+  if (window.innerWidth >= 767) {
+    navMenu.style.display = "";
+    main.style.display = "";
+    footer.style.display = "";
+  } else {
+    navMenu.style.display = "none";
+  }
+}
+updateMenuDisplay();
 
 burgerMenuIcon.addEventListener("click", () => {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 767) {
     if (navMenu.style.display === "none") {
       navMenu.style.display = "block";
       main.style.display = "none";
@@ -19,10 +28,4 @@ burgerMenuIcon.addEventListener("click", () => {
   }
 });
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 768) {
-    navMenu.style.display = "";
-    main.style.display = "";
-    footer.style.display = "";
-  }
-});
+window.addEventListener("resize", updateMenuDisplay);
