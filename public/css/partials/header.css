@@ -25,14 +25,42 @@
 }
 
 .navContainer ul {
-  display: none; /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
+  display: none;
   position: absolute;
   text-align: center;
   top: 100px;
   width: 100%;
   margin-right: -20px;
   list-style-type: none;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
+
+.navContainer ul.show {
+  display: block;
+  animation-name: slideIn;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navContainer ul.hide {
+  animation-name: slideOut;
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .navContainer li {
   font-size: 12vw;
   border-bottom: 1px solid var(--amarillo);
