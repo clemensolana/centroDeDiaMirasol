@@ -35,6 +35,10 @@ burgerMenuIcon.addEventListener("click", () => {
         navMenu.style.display = "none";
         main.style.display = "";
         footer.style.display = "";
+        main.classList.add("fade-in");
+        setTimeout(() => {
+          main.classList.remove("fade-in");
+        }, 300);
       }, 300);
     }
   }
