@@ -24,6 +24,20 @@
   width: 100%;
 }
 
+/* Menú hamburguesa */
+.burgerMenu {
+  color: var(--amarillo);
+  transition: opacity 0.3s ease;
+}
+
+/* X menú hamburguesa */
+
+.xButtonMenu {
+  color: var(--amarillo);
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
 /* Lista del menú hamburguesa + animación */
 .navContainer ul {
   display: none;
@@ -85,18 +99,6 @@ main.fade-in {
 .navContainer li a {
   color: var(--negro);
   text-decoration: none;
-}
-
-/* Menú hamburguesa */
-.burgerMenu {
-  color: var(--amarillo);
-}
-
-/* X menú hamburguesa */
-
-.xButtonMenu {
-  color: var(--amarillo);
-  display: none;
 }
 
 /* Tablet */
