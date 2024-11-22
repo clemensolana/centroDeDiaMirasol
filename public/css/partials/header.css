@@ -92,6 +92,13 @@ main.fade-in {
   color: var(--amarillo);
 }
 
+/* X menú hamburguesa */
+
+.xButtonMenu {
+  color: var(--amarillo);
+  display: none;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   .headerContainer {
