@@ -38,6 +38,7 @@
     <!-- Local scripts -->
 
     <script src="/js/burgerMenu/burgerMenu.js" defer></script>
+    <script src="/js/index/carrouselImage.js" defer></script>
 
     <title>MCD - Nuestras instalaciones</title>
   </head>
@@ -107,28 +108,43 @@
           <p>Santa Fe 496, Paraná, Entre Ríos, Argentina.</p>
         </div>
       </div>
-      <div class="imageContainer">
+      <div class="carrouselContainer">
         <h2>Fotos destacadas de las instalaciones</h2>
-        <img
-          class="imageContainer1"
-          src="/images/installationsImages/imagenInstalacionesDeEjemplo.jpg"
-          alt="Imagen de instalaciones de ejemplo"
-        />
-        <img
-          class="imageContainer2"
-          src="/images/installationsImages/imagenInstalacionesDeEjemplo.jpg"
-          alt="Imagen de instalaciones de ejemplo"
-        />
-        <img
-          class="imageContainer3"
-          src="/images/installationsImages/imagenInstalacionesDeEjemplo.jpg"
-          alt="Imagen de instalaciones de ejemplo"
-        />
-        <div class="imageSelectorAndTitle">
-          <i class="fa-solid fa-arrow-left fa-2xl"></i>
-          <p class="imageSelectorDescription">Comedor</p>
-          <i class="fa-solid fa-arrow-right fa-2xl"></i>
+        <div class="imageSlide fade">
+          <div class="numberText">1 / 3</div>
+          <img
+            class="carrouselImage"
+            src="/images/indexImages/imagenCarrouselDeEjemplo.jpg"
+            alt="Imagen de carrousel de ejemplo"
+          />
+          <div class="text">Imagen 1</div>
         </div>
+        <div class="imageSlide fade">
+          <div class="numberText">2 / 3</div>
+          <img
+            class="carrouselImage"
+            src="/images/indexImages/imagenCarrouselDeEjemplo.jpg"
+            alt="Imagen de carrousel de ejemplo"
+          />
+          <div class="text">Imagen 2</div>
+        </div>
+        <div class="imageSlide fade">
+          <div class="numberText">3 / 3</div>
+          <img
+            class="carrouselImage"
+            src="/images/indexImages/imagenCarrouselDeEjemplo.jpg"
+            alt="Imagen de carrousel de ejemplo"
+          />
+          <div class="text">Imagen 3</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div class="dotCircles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </main>
 
