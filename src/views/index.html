@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Normalize -->
-
     <link rel="stylesheet" href="/css/normalize.css" />
 
     <!-- External styles -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -29,12 +26,11 @@
     <link rel="stylesheet" href="/css/partials/footer.css" />
 
     <!-- Fav Icon -->
-
     <link rel="icon" type="image" href="/images/logoFondoTransparente.png" />
 
     <!-- Local scripts -->
-
     <script src="/js/burgerMenu/burgerMenu.js" defer></script>
+    <script src="/js/index/carrouselImage.js" defer></script>
 
     <title>Mirasol Centro de Día</title>
   </head>
@@ -71,12 +67,43 @@
 
     <main class="homeContainer">
       <div class="carrouselContainer">
-        <img
-          class="carrouselImage"
-          src="/images/indexImages/imagenCarrouselDeEjemplo.jpg"
-          alt="Imagen de carrousel de ejemplo"
-        />
+        <div class="imageSlide fade">
+          <div class="numberText">1 / 3</div>
+          <img
+            class="carrouselImage"
+            src="/images/indexImages/imagenCarrouselDeEjemplo.jpg"
+            alt="Imagen de carrousel de ejemplo"
+          />
+          <div class="text">Imagen 1</div>
+        </div>
+        <div class="imageSlide fade">
+          <div class="numberText">2 / 3</div>
+          <img
+            class="carrouselImage"
+            src="/images/indexImages/imagenCarrouselDeEjemplo.jpg"
+            alt="Imagen de carrousel de ejemplo"
+          />
+          <div class="text">Imagen 2</div>
+        </div>
+        <div class="imageSlide fade">
+          <div class="numberText">3 / 3</div>
+          <img
+            class="carrouselImage"
+            src="/images/indexImages/imagenCarrouselDeEjemplo.jpg"
+            alt="Imagen de carrousel de ejemplo"
+          />
+          <div class="text">Imagen 3</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+
+      <div class="dotCircles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
       <section class="welcomeContainer">
         <article>
           <h1>Bienvenido/a al sitio web de Mirasol Centro de Día</h1>
