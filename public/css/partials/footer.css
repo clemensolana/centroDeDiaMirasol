@@ -147,6 +147,9 @@ a[href^="tel"]:hover {
     align-items: center;
     justify-content: space-between;
   }
+  .footerContainer a:hover {
+    border-bottom: 2px solid #e99401;
+  }
 
   .socialContainer {
     top: 50%;

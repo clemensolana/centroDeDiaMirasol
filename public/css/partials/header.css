@@ -132,6 +132,9 @@ main.fade-in {
   .navContainer li a {
     color: var(--blanco);
   }
+  .navContainer a:hover {
+    border-bottom: 2px solid #e99401;
+  }
 
   .burgerMenu {
     display: none;
