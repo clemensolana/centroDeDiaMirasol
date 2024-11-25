@@ -46,6 +46,14 @@
   margin-bottom: 15px;
 }
 
+a[href^="tel"] {
+  color: var(--blanco);
+  text-decoration: none;
+}
+a[href^="tel"]:hover {
+  color: var(--blanco);
+}
+
 .itranetContainer {
   font-size: var(--text-3xl);
   margin-bottom: 15px;
