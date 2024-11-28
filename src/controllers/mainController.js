@@ -1,41 +1,32 @@
-const path = require('path');
+const path = require("path");
 
 const mainController = {
   index: (req, res) => {
-    const filePath = path.join(__dirname, '../views/index.html');
-    return res.sendFile(filePath);
+    return res.render("index");
   },
   services: (req, res) => {
-    const filePath = path.join(__dirname, '../views/services.html');
-    return res.sendFile(filePath);
+    return res.render("services");
   },
   installations: (req, res) => {
-    const filePath = path.join(__dirname, '../views/installations.html');
-    return res.sendFile(filePath);
+    return res.render("installations");
   },
   aboutUs: (req, res) => {
-    const filePath = path.join(__dirname, '../views/aboutUs.html');
-    return res.sendFile(filePath);
+    return res.render("aboutUs");
   },
   contactForm: (req, res) => {
-    const filePath = path.join(__dirname, '../views/contactForm.html');
-    return res.sendFile(filePath);
+    return res.render("contactForm");
   },
   news: (req, res) => {
-    const filePath = path.join(__dirname, '../views/news.html');
-    return res.sendFile(filePath);
+    return res.render("news");
   },
   aNew: (req, res) => {
-    const filePath = path.join(__dirname, '../views/aNew.html');
-    return res.sendFile(filePath);
+    return res.render("aNew");
   },
   termsAndConditions: (req, res) => {
-    const filePath = path.join(__dirname, '../views/t&c.html');
-    return res.sendFile(filePath);
+    return res.render("t&c");
   },
   dataProtection: (req, res) => {
-    const filePath = path.join(__dirname, '../views/dataProtection.html');
-    return res.sendFile(filePath);
+    return res.render("dataProtection");
   },
 };
 
