@@ -24,15 +24,73 @@
   width: 100%;
 }
 
+/* Menú hamburguesa */
+.burgerMenu {
+  color: var(--amarillo);
+  transition: opacity 0.3s ease;
+}
+
+/* X menú hamburguesa */
+
+.xButtonMenu {
+  color: var(--amarillo);
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Lista del menú hamburguesa + animación */
 .navContainer ul {
-  display: none; /* Se usa para el menu hamburguesa, luego se modificará con JS en el front */
+  display: none;
   position: absolute;
   text-align: center;
   top: 100px;
   width: 100%;
   margin-right: -20px;
   list-style-type: none;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
+
+.navContainer ul.show {
+  display: block;
+  animation-name: slideIn;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navContainer ul.hide {
+  animation-name: slideOut;
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Animación de Main */
+main.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .navContainer li {
   font-size: 12vw;
   border-bottom: 1px solid var(--amarillo);
@@ -41,10 +99,6 @@
 .navContainer li a {
   color: var(--negro);
   text-decoration: none;
-}
-
-.burgerMenu {
-  color: var(--amarillo);
 }
 
 /* Tablet */
@@ -77,6 +131,9 @@
   }
   .navContainer li a {
     color: var(--blanco);
+  }
+  .navContainer a:hover {
+    border-bottom: 2px solid #e99401;
   }
 
   .burgerMenu {

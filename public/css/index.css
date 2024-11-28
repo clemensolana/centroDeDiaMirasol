@@ -3,14 +3,94 @@
 .homeContainer {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .carrouselContainer {
   width: 100%;
+  margin: auto;
+  position: relative;
 }
-.carrouselImage {
+.imageSlide {
+  display: none;
+  position: relative;
+}
+.imageSlide img {
   width: 100%;
   height: auto;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.text {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  padding: 10px 10px;
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.numberText {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dotCircles {
+  text-align: center;
+  padding: 10px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .welcomeContainer {
@@ -18,13 +98,15 @@
   text-align: center;
 }
 .welcomeContainer p {
-  padding: 0px 20px;
-  font-size: var(--text-lg);
-  text-align: justify;
+  padding: 0 20px;
+  text-align: left;
 }
 
 /* Tablet */
 @media (min-width: 768px) {
+  .welcomeContainer {
+    padding: 50px 50px;
+  }
   .carrouselImage {
     max-height: 400px;
     object-fit: cover;
@@ -34,10 +116,10 @@
 /* Desktop */
 @media (min-width: 1024px) {
   .welcomeContainer {
-    padding: 20px 60px;
+    padding: 50px 100px;
     text-align: center;
   }
   .welcomeContainer p {
-    padding: 0px 0px;
+    padding: 0px 150px;
   }
 }
