@@ -24,13 +24,13 @@
 }
 
 .ourMisionContainer p {
-  text-align: justify;
+  text-align: left;
   font-size: var(--text-md);
   margin-bottom: 15px;
 }
 
 .ourVisionContainer p {
-  text-align: justify;
+  text-align: left;
   font-size: var(--text-md);
   margin-bottom: 15px;
 }
@@ -39,7 +39,7 @@
   margin-bottom: 15px;
 }
 .ourValuesContainer ul {
-  text-align: justify;
+  text-align: left;
   font-size: var(--text-md);
 }
 
@@ -80,6 +80,10 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
+  h1 {
+    margin: 0;
+    margin-bottom: 0.67em;
+  }
   .whoWeAreImageContainer {
     display: flex;
     flex-direction: row;
@@ -96,6 +100,7 @@
   }
   .imageTopContainer img {
     width: 100%;
+    border-radius: 20px;
   }
 
   .misionVisionValuesContainer {
