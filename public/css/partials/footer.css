@@ -63,9 +63,6 @@ a[href^="tel"]:hover {
   color: var(--blanco);
 }
 
-.copyrightContainer {
-}
-
 /* Tablet */
 @media (min-width: 768px) {
   .footerContainer {
