@@ -16,8 +16,7 @@
 }
 
 .contactFormInfo p {
-  font-size: 18px;
-  text-align: left;
+  text-align: center;
 }
 
 .patientInfo {
@@ -95,9 +94,7 @@
     width: 70%;
     margin: 0 auto;
   }
-  .contactFormInfo p {
-    text-align: justify;
-  }
+
   .sendMailButton {
     display: flex;
     flex-direction: column;
