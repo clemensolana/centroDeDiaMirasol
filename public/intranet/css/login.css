@@ -111,4 +111,9 @@
   .loginButton button {
     width: 30%;
   }
+
+  .loginImage {
+    max-height: 600px;
+    object-fit: cover;
+  }
 }
