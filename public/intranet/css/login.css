@@ -50,6 +50,12 @@
   color: var(--blanco);
 }
 
+.loginImage {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+
 /* Tablet */
 @media (min-width: 768px) {
   .loginFormContainer {
