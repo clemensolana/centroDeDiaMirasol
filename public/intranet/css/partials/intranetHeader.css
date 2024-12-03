@@ -17,18 +17,50 @@
   max-height: 100px;
 }
 
+/* Nuevos botones */
+
+.navBtn {
+  display: flex;
+  width: 70%;
+}
+.navBtn ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-left: 0;
+}
+.navBtn li {
+  margin-left: 0;
+}
+.navBtn li a {
+  text-decoration: none;
+}
+
+.exit {
+  color: red;
+}
+.user {
+  color: var(--amarillo);
+}
+.inicio {
+  color: var(--blanco);
+}
+
 .navContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 100%;
+  width: 10%;
 }
 
 /* Menú hamburguesa */
 .burgerMenu {
   color: var(--amarillo);
   transition: opacity 0.3s ease;
-  display: block; /* Asegúrate de que siempre sea visible */
+  display: block;
 }
 
 /* X menú hamburguesa */

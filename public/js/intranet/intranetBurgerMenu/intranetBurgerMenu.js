@@ -20,11 +20,15 @@ burgerMenuIcon.addEventListener("click", () => {
   if (navMenu.classList.contains("hide") || navMenu.style.display === "none") {
     navMenu.classList.remove("hide");
     navMenu.classList.add("show");
-    navMenu.style.display = "block";
-    burgerMenuIcon.style.display = "none";
-    xMenuButton.style.display = "block";
     main.style.display = "none";
     footer.style.display = "none";
+    navMenu.style.display = "block";
+    burgerMenuIcon.style.opacity = "0";
+    setTimeout(() => {
+      burgerMenuIcon.style.display = "none";
+      xMenuButton.style.display = "block";
+      xMenuButton.style.opacity = "1";
+    }, 300);
   }
 });
 
@@ -35,7 +39,15 @@ xMenuButton.addEventListener("click", () => {
     navMenu.style.display = "none";
     main.style.display = "";
     footer.style.display = "";
-    xMenuButton.style.display = "none";
-    burgerMenuIcon.style.display = "block";
+    main.classList.add("fade-in");
+    setTimeout(() => {
+      main.classList.remove("fade-in");
+    }, 300);
+    xMenuButton.style.opacity = "0";
+    setTimeout(() => {
+      xMenuButton.style.display = "none";
+      burgerMenuIcon.style.display = "block";
+      burgerMenuIcon.style.opacity = "1";
+    }, 300);
   }, 300);
 });
