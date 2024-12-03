@@ -36,8 +36,17 @@
   margin-left: 0;
 }
 .navBtn li a {
-  color: var(--blanco);
   text-decoration: none;
+}
+
+.exit {
+  color: red;
+}
+.user {
+  color: var(--amarillo);
+}
+.inicio {
+  color: var(--blanco);
 }
 
 .navContainer {
