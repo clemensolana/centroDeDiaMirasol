@@ -31,9 +31,11 @@ burgerMenuIcon.addEventListener("click", () => {
 xMenuButton.addEventListener("click", () => {
   navMenu.classList.remove("show");
   navMenu.classList.add("hide");
-  navMenu.style.display = "none";
-  burgerMenuIcon.style.display = "block";
-  xMenuButton.style.display = "none";
-  main.style.display = "";
-  footer.style.display = "";
+  setTimeout(() => {
+    navMenu.style.display = "none";
+    main.style.display = "";
+    footer.style.display = "";
+    xMenuButton.style.display = "none";
+    burgerMenuIcon.style.display = "block";
+  }, 300);
 });
