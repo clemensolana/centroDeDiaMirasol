@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nivelAcceso": "admin",
+    "nombreDeUsuario": "clemente.solana",
+    "contraseña": "12345678",
+    "imagenDePerfil": "profilePicture-1698188441446.jpg",
+    "nombre": "Clemente",
+    "apellido": "Solana Silveira",
+    "email": "clementesolana@icloud.com",
+    "telefono": "+54 9 343 4255679",
+    "fechaNacimiento": "1994-11-19",
+    "dni": "38.569.908",
+    "cuil": "20-38569908-6",
+    "genero": "Masculino",
+    "estadoCivil": "Soltero",
+    "direccion": "25 de Junio 152 piso 2",
+    "empleado": true,
+    "fechaContratacion": "2020-01-15",
+    "convenio": "108/75",
+    "puesto": "Administrativo",
+    "categoria": "Primera",
+    "obraSocial": "OSDE",
+    "profesional": true,
+    "llevaSello": true,
+    "especialidad": "Médico",
+    "matricula": "123456",
+    "firmaSello": "firma-1698188441446.jpg",
+    "antiguedad": 3,
+    "turno": "mañana",
+    "jornadaLaboral": "completa",
+    "horasSemanales": 44,
+    "diasLaborales": [
+      {
+        "dia": "Lunes",
+        "horas": 8
+      },
+      {
+        "dia": "Martes",
+        "horas": 8
+      },
+      {
+        "dia": "Miércoles",
+        "horas": 8
+      },
+      {
+        "dia": "Jueves",
+        "horas": 8
+      },
+      {
+        "dia": "Viernes",
+        "horas": 8
+      },
+      {
+        "dia": "Sábado",
+        "horas": 4
+      }
+    ],
+    "FamiliarACargo": true,
+    "familiares": [
+      {
+        "nombre": "Simón",
+        "apellido": "Solana Silveira",
+        "parentesco": "hijo",
+        "fechaNacimiento": "1960-01-15",
+        "edad": 5,
+        "dni": "38.569.908",
+        "obraSocial": true,
+        "discapacidad": false,
+        "estudia": false,
+        "trabaja": false
+      }
+    ],
+    "licencias": [
+      {
+        "tipo": "vacaciones",
+        "inicio": "2023-12-01",
+        "fin": "2023-12-15"
+      }
+    ],
+    "extrasConvenio": [
+      {
+        "descripcion": "Manejo de caja",
+        "incluido": true
+      },
+      {
+        "descripcion": "Limpieza y cocina",
+        "incluido": false
+      }
+    ],
+    "fichados": [
+      {
+        "idFichado": 1,
+        "fecha": "2023-10-01",
+        "ingreso": "08:00:00",
+        "egreso": "16:00:00",
+        "horasTrabajadas": 8,
+        "horasExtras": 0
+      },
+      {
+        "idFichado": 2,
+        "fecha": "2023-10-02",
+        "ingreso": "08:00:00",
+        "egreso": "16:00:00",
+        "horasTrabajadas": 8,
+        "horasExtras": 0
+      }
+    ]
+  }
+]

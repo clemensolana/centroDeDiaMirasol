@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('../partials/intranetHead.ejs') %>
+
+    <link rel="stylesheet" href="/intranet/css/login.css" />
+
+    <title>MIRASOL - Intranet - Login</title>
+  </head>
+
+  <body>
+    <header class="headerContainer">
+      <%- include('../partials/intranetHeader.ejs') %>
+    </header>
+
+    <main class="homeContainer">
+      <section class="loginFormSectionContainer">
+        <h1 class="loginFormTitle">Mirasol - Intranet</h1>
+        <div class="squareContainer">
+          <article class="loginFormInfo">
+            <p>
+              Bienvenido/a, por favor ingresa tu nombre de usuario y contraseña
+            </p>
+          </article>
+          <form
+            id="loginForm"
+            class="loginFormContainer"
+            action="/intranet/login"
+            method="POST"
+          >
+            <div class="userInfo">
+              <label for="userName">Nombre de usuario:</label>
+              <input
+                type="text"
+                id="userName"
+                name="userName"
+                placeholder="Escriba aquí su nombre de usuario"
+              />
+            </div>
+            <div class="userInfo">
+              <label for="password">Contraseña:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Escriba aquí su contraseña"
+              />
+            </div>
+            <div class="loginButton">
+              <button type="submit">Iniciar sesión</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <img
+        class="loginImage"
+        src="/intranet/images/login/login.png"
+        alt="Imagen de girasoles con pájaro y texto Mirasol"
+      />
+    </main>
+
+    <footer class="footerContainer">
+      <%- include('../partials/intranetFooter.ejs') %>
+    </footer>
+  </body>
+</html>
